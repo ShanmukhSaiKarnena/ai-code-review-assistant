@@ -140,21 +140,7 @@ Branch creation, file update, PR creation
 
 
 📦 Project Structure
-AI-Code-Review-Assistant/
-│
-├── backend/
-│   ├── index.js
-│   ├── package.json
-│   ├── .env (ignored in Git)
-│
-├── frontend/
-│   ├── src/
-│   ├── App.jsx
-│   ├── vite.config.js
-│   ├── package.json
-│   ├── .env (ignored)
-│
-└── README.md
+<img width="513" height="515" alt="image" src="https://github.com/user-attachments/assets/b5f03176-b36b-45b9-9a50-793c839c5194" />
 
 
 ⚙️ Environment Variables
@@ -243,6 +229,7 @@ shanmukhsaikarnena@gmail.com
 📄 License
 
 This project is licensed under the MIT License.
+
 
 
 
