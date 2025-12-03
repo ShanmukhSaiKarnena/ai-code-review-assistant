@@ -13,10 +13,19 @@ app.get("/health", (req, res) => {
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log("Backend running on port", PORT));
 
+// app.get("/auth/github/login", (req, res) => {
+//   const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&scope=repo,user`;
+//   res.redirect(redirectUrl);
+// });
 app.get("/auth/github/login", (req, res) => {
-  const redirectUrl = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&scope=repo,user`;
+  const redirectUrl = `https://github.com/login/oauth/authorize` +
+    `?client_id=${process.env.GITHUB_CLIENT_ID}` +
+    `&redirect_uri=${process.env.GITHUB_REDIRECT_URI}` +
+    `&scope=repo,user`;
+
   res.redirect(redirectUrl);
 });
+
 
 
 const axios = require("axios");
@@ -44,7 +53,7 @@ app.get("/auth/github/callback", async (req, res) => {
     const accessToken = tokenResponse.data.access_token;
 
     // Send token to frontend (later we store in DB/JWT)
-    res.redirect(`http://localhost:5173?token=${accessToken}`);
+    res.redirect(`https://ai-code-review-assistant-phi.vercel.app/?token=${accessToken}`);
   } catch (err) {
     console.log(err);
     res.status(500).json({ error: "Token exchange failed" });
