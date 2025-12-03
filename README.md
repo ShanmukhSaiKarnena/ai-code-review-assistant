@@ -1,4 +1,4 @@
-<img width="1910" height="939" alt="image" src="https://github.com/user-attachments/assets/f9c63d11-1e36-49aa-ae95-0eba9956bd62" />🚀 AI Code Review Assistant
+🚀 AI Code Review Assistant
 Automated Pull-Request Reviewer using MERN + Google Gemini + GitHub API
 
 An intelligent code-review system that analyzes GitHub Pull Requests, identifies issues, generates optimized fixes, and can even auto-apply those fixes by creating branches and PRs — just like a real senior developer or GitHub bot.
@@ -16,7 +16,7 @@ An intelligent code-review system that analyzes GitHub Pull Requests, identifies
 🔹 AI Review Output
 <img width="1910" height="939" alt="image" src="https://github.com/user-attachments/assets/60d44071-6960-473d-aa07-673911f890e4" />
 
-<img width="1910" height="939" alt="image" src="https://github.com/user-attachments/assets/b41c7ac7-e919-4b06-bebc-5d454d02f340" />
+
 
 <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/5c3cbb21-2ceb-459f-a53c-4eab2ea078b0" />
 
@@ -243,6 +243,7 @@ shanmukhsaikarnena@gmail.com
 📄 License
 
 This project is licensed under the MIT License.
+
 
 
 
