@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   const loginWithGithub = () => {
-    window.location.href = "http://localhost:4000/auth/github/login";
+    window.location.href = "https://ai-code-review-assistant-7nuc.onrender.com/auth/github/login";
   };
 
   const fetchRepos = () => {
